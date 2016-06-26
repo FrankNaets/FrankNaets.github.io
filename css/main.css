@@ -27,3 +27,12 @@ ul.posts li { list-style: none; }
 .cv address, .cv .download { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
 .cv address, .cv p { font-size: 1.2em; }
 .cv .download { float: right; font-size: .8em; text-transform: uppercase; }
+
+/* Contact */
+.contact { margin: 0px 0px 60px; }
+.contact h1 { font-size: 3em; }
+.contact h2 { font-size: 1.5em; }
+.contact address, .contact .download { font-family: 'Helvetica', 'Arial', 'Sans-Serif'; }
+.contact address, .contact p { font-size: 1.2em; }
+.contact .download { float: right; font-size: .8em; text-transform: uppercase; }
+
