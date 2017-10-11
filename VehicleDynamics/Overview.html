@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- This file is for testing how difficult/straightforward it is to get a decent
+     looking web-page from a paper -->
+
+<head>
+
+  <!-- Bootstrap for CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- MathJax for equation rendering -->
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {  autoNumber: "AMS"  },
+      extensions: ["AMSmath.js", "AMSsymbols.js", "autobold.js", "color.js"],
+      Macros: {
+        RR: "{\\mathbb R}",
+      }
+    }
+  });
+  </script>
+
+  <script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+<h1> H0T54a: Automotive Structures and Vehicle Dynamics - H05A1a: Voertuigconstructies en Voertuigdynamica </h1>
+
+<a href="mailto:frank.naets@kuleuven.be">Frank Naets</a><br>
+
+This is the website of the Vehicle Dynamics course as taught at the KU Leuven.
+
+<h2> Introduction </h2>
+<p> In recent years, a range of derivative technologies arrived which exploit (flexible) multibody simulation paradigms:
+<ul>
+<li> Model based state-estimation REFs; </li>
+<li> Model based control. </li>
+</ul>
+However, the general application of these approaches to multibody systems, has two main difficulties:
+<ul>
+<li> Many of the methodologies develop for estimation and control, assume an ODE description for the underlying model; </li>
+<li> As many of these technologies are aimed toward fast/online or multi-query settings, model simulation cost is an important issue. </li>
+</ul>
+This work proposes a reduced flexible multibody formulation which allows to describe general multibody problems with a range of desirable properties not encountered in current methods.
+</p>
+
+
+<p> This web page visualizes the function \(
+u(t) = Ae^{-bt}\sin (w t), \hbox{ for } t\in [0,T]
+\). </p>
+
+<h2> Msdethodology overview </h2>
+<p> The first two steps which rely on external software are briefly discussed in the following section.
+  The next section are then focussed on describing the reduced order modeling scheme.
+  <!-- Include eps figure? - not straightforward, but svg works...
+<img src="MethodOverview.svg"/> -->
+</p>
+
+<h2> Training Simulation </h2>
+<p>
+In this work it is assumed that the original model contains only flexible bodies. In general, the differential algebraic equations describing the motion of the system can be written as:
+In these equations the inertial forces are generally a nonlinear function of the generalized
+multibody coordinates \(q\) and their velocities \(\dot{q}\).
+The same is true for the damping forces \(F_{damp}\) and internal elastic forces in the bodies \(F_{int}\).
+$$
+\sum_{i=0}^n i^2 = \frac{(n^2+n)(2n+1)}{6}
+$$
+with \(n \in \RR\).
+</p>
+
+
+</div>
+
+</body>
+
+</html>
